@@ -9,7 +9,7 @@ reset="\033[0m"
 
 echo -e "${cyan}"
 echo "============================================================"
-echo " Dhells Hacker Menu Installer"
+echo " Dhellss Menu Installer"
 echo "============================================================"
 echo -e "${reset}"
 
@@ -30,4 +30,5 @@ echo ""
 echo -e "${green}[+] Done.${reset}"
 echo "Run it with:"
 echo "./hacker.sh"
+
 
