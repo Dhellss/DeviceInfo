@@ -1,7 +1,6 @@
 # Termux Hacker Menu
 
-Harmless Termux menu project with hacker-style text effects, device info,
-network info, Matrix mode, and an about screen.
+
 
 This is for learning, demos, and personal use only. It does not steal data,
 crack passwords, bypass security, or hack other devices. just fun:>
