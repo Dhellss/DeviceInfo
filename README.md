@@ -8,12 +8,11 @@ crack passwords, bypass security, or hack other devices. just fun:>
 
 ## Install From GitHub
 
-Replace `USERNAME` and `REPO` with your GitHub username and repository name.
 
 ```bash
 pkg update
 pkg install git -y
-git clone https://github.com/USERNAME/REPO.git
+git clone https://github.com/Dhellss/DeviceInfo
 cd REPO
 chmod +x install.sh hacker.sh
 ./install.sh
