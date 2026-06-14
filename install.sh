@@ -9,7 +9,7 @@ reset="\033[0m"
 
 echo -e "${cyan}"
 echo "============================================================"
-echo " Termux Hacker Menu Installer"
+echo " Dhells Hacker Menu Installer"
 echo "============================================================"
 echo -e "${reset}"
 
