@@ -19,17 +19,25 @@ paint() {
 
 pause_screen() {
   echo ""
-  read -r -p "Press Enter to return to menu..."
+  echo -e "${cyan}[Enter]${reset} Return to menu"
+  echo -e "${cyan}[0]${reset} Exit"
+  echo ""
+  read -r -p "Choose: " next_action
+
+  if [ "$next_action" = "0" ]; then
+    echo -e "${green}Goodbye, operator.${reset}"
+    exit 0
+  fi
 }
 
 banner() {
   clear
   if command -v toilet >/dev/null 2>&1; then
-    toilet -f big "Info" | paint
+    toilet -f big "SECRET CODE" | paint
   elif command -v figlet >/dev/null 2>&1; then
-    figlet "Info" | paint
+    figlet "SECRET CODE" | paint
   else
-    echo "Info" | paint
+    echo "SECRET CODE" | paint
   fi
 
   echo -e "${green}============================================================${reset}"
@@ -114,14 +122,16 @@ network_info() {
 matrix_mode() {
   clear
   echo -e "${green}Launching Matrix Mode...${reset}"
+  echo -e "${yellow}Press q to stop Matrix Mode.${reset}"
   sleep 1
 
   if command -v cmatrix >/dev/null 2>&1; then
     cmatrix
   else
     echo "cmatrix is not installed. Run ./install.sh first."
-    pause_screen
   fi
+
+  pause_screen
 }
 
 about_screen() {
@@ -173,4 +183,3 @@ main_menu() {
 
 loading
 main_menu
-
