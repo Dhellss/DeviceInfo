@@ -25,11 +25,11 @@ pause_screen() {
 banner() {
   clear
   if command -v toilet >/dev/null 2>&1; then
-    toilet -f big "SECRET CODE" | paint
+    toilet -f big "Info" | paint
   elif command -v figlet >/dev/null 2>&1; then
-    figlet "SECRET CODE" | paint
+    figlet "Info" | paint
   else
-    echo "SECRET CODE" | paint
+    echo "Info" | paint
   fi
 
   echo -e "${green}============================================================${reset}"
