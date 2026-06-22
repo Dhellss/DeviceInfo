@@ -1,4 +1,4 @@
-# Termux Hacker Menu
+# Termux Device getter info menu
 
 
 
